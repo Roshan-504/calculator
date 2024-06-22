@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="outerbox" class="outerbox">
+        <div id="mainbox" class="mainbox">
+            <div class="display">
+                <div id="nightmode" class="nightmode" >
+                    <div id="nightball" class="nightball"></div>
+                </div>
+                <input type="text" name="display" id="display">
+            </div>
+            <div id="buttonBox" class="buttonBox">
+                <div class="buttonRow">
+                    <button onclick="ClearDisplay()" id="buttons" class="buttons">AC</button>
+                    <button onclick="Delete()" id="buttons" class="buttons">DE</button>
+                    <button onclick="appendToDisplay('%')" id="buttons" class="buttons">%</button>
+                    <button onclick="appendToDisplay('/')" id="buttons" class="buttons">/</button>
+                </div>
+                
+                <div class="buttonRow">
+                    <button onclick="appendToDisplay('7')" id="buttons" class="buttons num">7</button>
+                    <button onclick="appendToDisplay('8')" id="buttons" class="buttons num">8</button>
+                    <button onclick="appendToDisplay('9')" id="buttons" class="buttons num">9</button>
+                    <button onclick="appendToDisplay('*')" id="buttons" class="buttons">x</button>
+                </div>
+                
+                <div class="buttonRow">
+                    <button onclick="appendToDisplay('4')" id="buttons" class="buttons num">4</button>
+                    <button onclick="appendToDisplay('5')" id="buttons" class="buttons num">5</button>
+                    <button onclick="appendToDisplay('6')" id="buttons" class="buttons num">6</button>
+                    <button onclick="appendToDisplay('-')" id="buttons" class="buttons">-</button>
+                </div>
+                
+                <div class="buttonRow">
+                    <button onclick="appendToDisplay('1')" id="buttons" class="buttons num">1</button>
+                    <button onclick="appendToDisplay('2')" id="buttons" class="buttons num">2</button>
+                    <button onclick="appendToDisplay('3')" id="buttons" class="buttons num">3</button>
+                    <button onclick="appendToDisplay('+')" id="buttons" class="buttons">+</button>
+                </div>
+                
+                <div class="buttonRow">
+                    <button onclick="appendToDisplay('0')" id="buttons" class="buttons num">0</button>
+                    <button onclick="appendToDisplay('.')" id="buttons" class="buttons num">.</button>
+                    <button onclick="Calculate()" id="buttons" class="buttons equals">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="calculator.js"></script>
+</body>
+</html>
